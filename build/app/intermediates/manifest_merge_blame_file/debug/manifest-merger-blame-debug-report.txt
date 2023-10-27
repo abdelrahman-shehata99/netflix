@@ -1,0 +1,811 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.netflix"
+4    android:versionCode="8"
+5    android:versionName="1.4.3" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->F:\app\netflix\android\app\src\main\AndroidManifest.xml:33:5-66
+15-->F:\app\netflix\android\app\src\main\AndroidManifest.xml:33:22-64
+16    <uses-permission android:name="android.permission.WAKE_LOCK" />
+16-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-68
+16-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-65
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
+17-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-79
+17-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-76
+18    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+18-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-77
+18-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:22-74
+19    <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" />
+19-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-89
+19-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-86
+20    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+20-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-81
+20-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-78
+21    <uses-permission android:name="android.permission.VIBRATE" />
+21-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-66
+21-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:12:22-63
+22
+23    <queries>
+23-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-13:15
+24        <intent>
+24-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-12:18
+25            <action android:name="android.support.customtabs.action.CustomTabsService" />
+25-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-90
+25-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-87
+26        </intent>
+27        <!-- Needs to be explicitly declared on Android R+ -->
+28        <package android:name="com.google.android.apps.maps" />
+28-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\pc\.gradle\caches\transforms-3\470ade6724a8e2b4955e7c21380a395b\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+28-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\pc\.gradle\caches\transforms-3\470ade6724a8e2b4955e7c21380a395b\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+29    </queries>
+30
+31    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+31-->[:video_compress] F:\app\netflix\build\video_compress\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-81
+31-->[:video_compress] F:\app\netflix\build\video_compress\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-78
+32    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+33    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+33-->[:location] F:\app\netflix\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-81
+33-->[:location] F:\app\netflix\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-78
+34    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+34-->[:location] F:\app\netflix\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-79
+34-->[:location] F:\app\netflix\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-76
+35    <uses-permission
+35-->[me.carda:AndroidAwnCore:0.8.0] C:\Users\pc\.gradle\caches\transforms-3\14c380e9a8323141fc2b2584754372eb\transformed\jetified-AndroidAwnCore-0.8.0\AndroidManifest.xml:10:5-12:38
+36        android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+36-->[me.carda:AndroidAwnCore:0.8.0] C:\Users\pc\.gradle\caches\transforms-3\14c380e9a8323141fc2b2584754372eb\transformed\jetified-AndroidAwnCore-0.8.0\AndroidManifest.xml:11:9-77
+37        android:maxSdkVersion="22" />
+37-->[me.carda:AndroidAwnCore:0.8.0] C:\Users\pc\.gradle\caches\transforms-3\14c380e9a8323141fc2b2584754372eb\transformed\jetified-AndroidAwnCore-0.8.0\AndroidManifest.xml:12:9-35
+38
+39    <uses-feature
+39-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\pc\.gradle\caches\transforms-3\470ade6724a8e2b4955e7c21380a395b\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+40        android:glEsVersion="0x00020000"
+40-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\pc\.gradle\caches\transforms-3\470ade6724a8e2b4955e7c21380a395b\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+41        android:required="true" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+41-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\pc\.gradle\caches\transforms-3\470ade6724a8e2b4955e7c21380a395b\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+42    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+42-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\pc\.gradle\caches\transforms-3\5b53461b3a0bb821d30a9482bb522b91\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:26:5-82
+42-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\pc\.gradle\caches\transforms-3\5b53461b3a0bb821d30a9482bb522b91\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:26:22-79
+43    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+43-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\pc\.gradle\caches\transforms-3\12162ca58fca2b83559a3136fbb6e38b\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:25:5-79
+43-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\pc\.gradle\caches\transforms-3\12162ca58fca2b83559a3136fbb6e38b\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:25:22-76
+44    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+44-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\pc\.gradle\caches\transforms-3\703cda2df44a7b6bb6742c89c6c75047\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:26:5-110
+44-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\pc\.gradle\caches\transforms-3\703cda2df44a7b6bb6742c89c6c75047\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:26:22-107
+45
+46    <permission
+46-->[androidx.core:core:1.10.1] C:\Users\pc\.gradle\caches\transforms-3\889ce5bd12f1117e5357d5fcdb5e1305\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+47        android:name="com.example.netflix.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+47-->[androidx.core:core:1.10.1] C:\Users\pc\.gradle\caches\transforms-3\889ce5bd12f1117e5357d5fcdb5e1305\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+48        android:protectionLevel="signature" />
+48-->[androidx.core:core:1.10.1] C:\Users\pc\.gradle\caches\transforms-3\889ce5bd12f1117e5357d5fcdb5e1305\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+49
+50    <uses-permission android:name="com.example.netflix.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- for android -->
+50-->[androidx.core:core:1.10.1] C:\Users\pc\.gradle\caches\transforms-3\889ce5bd12f1117e5357d5fcdb5e1305\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+50-->[androidx.core:core:1.10.1] C:\Users\pc\.gradle\caches\transforms-3\889ce5bd12f1117e5357d5fcdb5e1305\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+51    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+52    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+53    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+54    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+55    <!-- for Samsung -->
+56    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+56-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:19:5-86
+56-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:19:22-83
+57    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+57-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:20:5-87
+57-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:20:22-84
+58    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+58-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:23:5-81
+58-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:23:22-78
+59    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+59-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:24:5-83
+59-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:24:22-80
+60    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+60-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:27:5-88
+60-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:27:22-85
+61    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+61-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:28:5-92
+61-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:28:22-89
+62    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+62-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:31:5-84
+62-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:31:22-81
+63    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+63-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:34:5-83
+63-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:34:22-80
+64    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+64-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:37:5-91
+64-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:37:22-88
+65    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+65-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:38:5-92
+65-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:38:22-89
+66    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+66-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:39:5-93
+66-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:39:22-90
+67    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+67-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:42:5-73
+67-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:42:22-70
+68    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+68-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:45:5-82
+68-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:45:22-79
+69    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+69-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:46:5-83
+69-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:46:22-80
+70    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+70-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:49:5-88
+70-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:49:22-85
+71    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+71-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:50:5-89
+71-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\pc\.gradle\caches\transforms-3\3b4273e78162454268563f02e8908dbe\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:50:22-86
+72
+73    <application
+74        android:name="android.app.Application"
+75        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+75-->[androidx.core:core:1.10.1] C:\Users\pc\.gradle\caches\transforms-3\889ce5bd12f1117e5357d5fcdb5e1305\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+76        android:debuggable="true"
+77        android:icon="@mipmap/ic_launcher"
+78        android:label="netflix" >
+79        <activity
+80            android:name="com.example.netflix.MainActivity"
+81            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+82            android:exported="true"
+83            android:hardwareAccelerated="true"
+84            android:launchMode="singleTop"
+85            android:theme="@style/LaunchTheme"
+86            android:windowSoftInputMode="adjustResize" >
+87
+88            <!--
+89                 Specifies an Android theme to apply to this Activity as soon as
+90                 the Android process has started. This theme is visible to the user
+91                 while the Flutter UI initializes. After that, this theme continues
+92                 to determine the Window background behind the Flutter UI.
+93            -->
+94            <meta-data
+95                android:name="io.flutter.embedding.android.NormalTheme"
+96                android:resource="@style/NormalTheme" />
+97
+98            <intent-filter>
+99                <action android:name="android.intent.action.MAIN" />
+100
+101                <category android:name="android.intent.category.LAUNCHER" />
+102            </intent-filter>
+103        </activity>
+104        <!--
+105             Don't delete the meta-data below.
+106             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+107        -->
+108        <meta-data
+109            android:name="flutterEmbedding"
+110            android:value="2" />
+111
+112        <service
+112-->[:cloud_firestore] F:\app\netflix\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+113            android:name="com.google.firebase.components.ComponentDiscoveryService"
+113-->[:cloud_firestore] F:\app\netflix\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+114            android:directBootAware="true"
+114-->[com.google.firebase:firebase-common:20.3.3] C:\Users\pc\.gradle\caches\transforms-3\3817c50311106436f5a82e10cc73a226\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:34:13-43
+115            android:exported="false" >
+115-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:68:13-37
+116            <meta-data
+116-->[:cloud_firestore] F:\app\netflix\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+117                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+117-->[:cloud_firestore] F:\app\netflix\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[:cloud_firestore] F:\app\netflix\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+119            <meta-data
+119-->[:firebase_auth] F:\app\netflix\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+120                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+120-->[:firebase_auth] F:\app\netflix\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[:firebase_auth] F:\app\netflix\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+122            <meta-data
+122-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-40:85
+123                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+123-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:39:17-128
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:40:17-82
+125            <meta-data
+125-->[:firebase_core] F:\app\netflix\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+126                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+126-->[:firebase_core] F:\app\netflix\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[:firebase_core] F:\app\netflix\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+128            <meta-data
+128-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:69:13-71:85
+129                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+129-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:70:17-109
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:71:17-82
+131            <meta-data
+131-->[com.google.firebase:firebase-firestore:24.8.1] C:\Users\pc\.gradle\caches\transforms-3\dc9735ec276a7a84b3d2fb4b03dbef52\transformed\jetified-firebase-firestore-24.8.1\AndroidManifest.xml:17:13-19:85
+132                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+132-->[com.google.firebase:firebase-firestore:24.8.1] C:\Users\pc\.gradle\caches\transforms-3\dc9735ec276a7a84b3d2fb4b03dbef52\transformed\jetified-firebase-firestore-24.8.1\AndroidManifest.xml:18:17-111
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.firebase:firebase-firestore:24.8.1] C:\Users\pc\.gradle\caches\transforms-3\dc9735ec276a7a84b3d2fb4b03dbef52\transformed\jetified-firebase-firestore-24.8.1\AndroidManifest.xml:19:17-82
+134            <meta-data
+134-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\pc\.gradle\caches\transforms-3\5b53461b3a0bb821d30a9482bb522b91\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:53:13-55:85
+135                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+135-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\pc\.gradle\caches\transforms-3\5b53461b3a0bb821d30a9482bb522b91\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:54:17-119
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\pc\.gradle\caches\transforms-3\5b53461b3a0bb821d30a9482bb522b91\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:55:17-82
+137            <meta-data
+137-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\pc\.gradle\caches\transforms-3\12162ca58fca2b83559a3136fbb6e38b\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:31:13-33:85
+138                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+138-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\pc\.gradle\caches\transforms-3\12162ca58fca2b83559a3136fbb6e38b\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:32:17-139
+139                android:value="com.google.firebase.components.ComponentRegistrar" />
+139-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\pc\.gradle\caches\transforms-3\12162ca58fca2b83559a3136fbb6e38b\transformed\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:33:17-82
+140            <meta-data
+140-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\pc\.gradle\caches\transforms-3\e581c130301c10ce6b8c5359bcdffea7\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+141                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+141-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\pc\.gradle\caches\transforms-3\e581c130301c10ce6b8c5359bcdffea7\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+142                android:value="com.google.firebase.components.ComponentRegistrar" />
+142-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\pc\.gradle\caches\transforms-3\e581c130301c10ce6b8c5359bcdffea7\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+143            <meta-data
+143-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\pc\.gradle\caches\transforms-3\e85a376026f9936f633bfe02b56b4a77\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+144                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+144-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\pc\.gradle\caches\transforms-3\e85a376026f9936f633bfe02b56b4a77\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+145                android:value="com.google.firebase.components.ComponentRegistrar" />
+145-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\pc\.gradle\caches\transforms-3\e85a376026f9936f633bfe02b56b4a77\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+146            <meta-data
+146-->[com.google.firebase:firebase-installations:17.1.4] C:\Users\pc\.gradle\caches\transforms-3\db91968ca5d0105a265369ec1a50c397\transformed\jetified-firebase-installations-17.1.4\AndroidManifest.xml:15:13-17:85
+147                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+147-->[com.google.firebase:firebase-installations:17.1.4] C:\Users\pc\.gradle\caches\transforms-3\db91968ca5d0105a265369ec1a50c397\transformed\jetified-firebase-installations-17.1.4\AndroidManifest.xml:16:17-127
+148                android:value="com.google.firebase.components.ComponentRegistrar" />
+148-->[com.google.firebase:firebase-installations:17.1.4] C:\Users\pc\.gradle\caches\transforms-3\db91968ca5d0105a265369ec1a50c397\transformed\jetified-firebase-installations-17.1.4\AndroidManifest.xml:17:17-82
+149        </service>
+150        <service
+150-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-19:72
+151            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+151-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-107
+152            android:exported="false"
+152-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
+153            android:permission="android.permission.BIND_JOB_SERVICE" />
+153-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-69
+154        <service
+154-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-26:19
+155            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+155-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-97
+156            android:exported="false" >
+156-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
+157            <intent-filter>
+157-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+158                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+158-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+158-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+159            </intent-filter>
+160        </service>
+161
+162        <receiver
+162-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-35:20
+163            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+163-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-98
+164            android:exported="true"
+164-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-36
+165            android:permission="com.google.android.c2dm.permission.SEND" >
+165-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-73
+166            <intent-filter>
+166-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+167                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+167-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+167-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+168            </intent-filter>
+169        </receiver>
+170
+171        <provider
+171-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:9-47:38
+172            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+172-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-102
+173            android:authorities="com.example.netflix.flutterfirebasemessaginginitprovider"
+173-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-88
+174            android:exported="false"
+174-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-37
+175            android:initOrder="99" />
+175-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-35
+176        <provider
+176-->[:image_picker_android] F:\app\netflix\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+177            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+177-->[:image_picker_android] F:\app\netflix\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-82
+178            android:authorities="com.example.netflix.flutter.image_provider"
+178-->[:image_picker_android] F:\app\netflix\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-74
+179            android:exported="false"
+179-->[:image_picker_android] F:\app\netflix\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+180            android:grantUriPermissions="true" >
+180-->[:image_picker_android] F:\app\netflix\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+181            <meta-data
+181-->[:image_picker_android] F:\app\netflix\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:75
+182                android:name="android.support.FILE_PROVIDER_PATHS"
+182-->[:image_picker_android] F:\app\netflix\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+183                android:resource="@xml/flutter_image_picker_file_paths" />
+183-->[:image_picker_android] F:\app\netflix\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
+184        </provider>
+185
+186        <receiver
+186-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:15:9-17:39
+187            android:name="me.carda.awesome_notifications.DartNotificationActionReceiver"
+187-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-89
+188            android:exported="true" />
+188-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-36
+189        <receiver
+189-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-20:39
+190            android:name="me.carda.awesome_notifications.DartDismissedNotificationReceiver"
+190-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-92
+191            android:exported="true" />
+191-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-36
+192        <receiver
+192-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-23:39
+193            android:name="me.carda.awesome_notifications.DartScheduledNotificationReceiver"
+193-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-92
+194            android:exported="true" />
+194-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-36
+195        <receiver
+195-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:9-38:20
+196            android:name="me.carda.awesome_notifications.DartRefreshSchedulesReceiver"
+196-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:13-87
+197            android:enabled="true"
+197-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-35
+198            android:exported="true" >
+198-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-36
+199            <intent-filter>
+199-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-37:29
+200                <category android:name="android.intent.category.DEFAULT" />
+200-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:17-76
+200-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:27-73
+201
+202                <action android:name="android.intent.action.BOOT_COMPLETED" />
+202-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-79
+202-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-76
+203                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+203-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:32:17-86
+203-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:32:25-83
+204                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+204-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-84
+204-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-81
+205                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+205-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:34:17-82
+205-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:34:25-79
+206                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+206-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:35:17-82
+206-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:35:25-79
+207                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+207-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:36:17-107
+207-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:36:25-104
+208            </intent-filter>
+209        </receiver>
+210
+211        <service
+211-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:40:9-43:72
+212            android:name="me.carda.awesome_notifications.DartBackgroundService"
+212-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:41:13-80
+213            android:exported="false"
+213-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-37
+214            android:permission="android.permission.BIND_JOB_SERVICE" />
+214-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-69
+215        <service
+215-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:44:9-49:43
+216            android:name="me.carda.awesome_notifications.core.services.ForegroundService"
+216-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-90
+217            android:enabled="true"
+217-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-35
+218            android:exported="false"
+218-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-37
+219            android:foregroundServiceType="phoneCall"
+219-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:48:13-54
+220            android:stopWithTask="true" />
+220-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:49:13-40
+221
+222        <activity
+222-->[:url_launcher_android] F:\app\netflix\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
+223            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+223-->[:url_launcher_android] F:\app\netflix\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+224            android:exported="false"
+224-->[:url_launcher_android] F:\app\netflix\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+225            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+225-->[:url_launcher_android] F:\app\netflix\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
+226        <activity
+226-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-20:47
+227            android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity"
+227-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-104
+228            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
+228-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-137
+229            android:exported="false"
+229-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-37
+230            android:theme="@style/AppTheme" />
+230-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-44
+231        <activity
+231-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-24:55
+232            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"
+232-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-112
+233            android:exported="false"
+233-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-37
+234            android:theme="@style/ThemeTransparent" />
+234-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-52
+235        <activity
+235-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:25:9-28:55
+236            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity"
+236-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-106
+237            android:exported="false"
+237-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-37
+238            android:theme="@style/ThemeTransparent" />
+238-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-52
+239        <activity
+239-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:29:9-33:55
+240            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
+240-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-126
+241            android:exported="false"
+241-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-37
+242            android:launchMode="singleInstance"
+242-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-48
+243            android:theme="@style/ThemeTransparent" />
+243-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:33:13-52
+244        <activity
+244-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:34:9-38:55
+245            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance"
+245-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:35:13-120
+246            android:exported="false"
+246-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-37
+247            android:launchMode="singleInstance"
+247-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:37:13-48
+248            android:theme="@style/ThemeTransparent" />
+248-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-52
+249
+250        <receiver
+250-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:40:9-43:40
+251            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver"
+251-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:41:13-111
+252            android:enabled="true"
+252-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-35
+253            android:exported="false" />
+253-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-37
+254
+255        <meta-data
+255-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:45:9-47:36
+256            android:name="io.flutter.embedded_views_preview"
+256-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-61
+257            android:value="true" />
+257-->[:flutter_inappwebview] F:\app\netflix\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-33
+258
+259        <service
+259-->[:location] F:\app\netflix\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-17:56
+260            android:name="com.lyokone.location.FlutterLocationService"
+260-->[:location] F:\app\netflix\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-71
+261            android:enabled="true"
+261-->[:location] F:\app\netflix\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-35
+262            android:exported="false"
+262-->[:location] F:\app\netflix\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
+263            android:foregroundServiceType="location" />
+263-->[:location] F:\app\netflix\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-53
+264        <service
+264-->[me.carda:AndroidAwnCore:0.8.0] C:\Users\pc\.gradle\caches\transforms-3\14c380e9a8323141fc2b2584754372eb\transformed\jetified-AndroidAwnCore-0.8.0\AndroidManifest.xml:21:9-28:19
+265            android:name="me.carda.awesome_notifications.core.managers.StatusBarManager"
+265-->[me.carda:AndroidAwnCore:0.8.0] C:\Users\pc\.gradle\caches\transforms-3\14c380e9a8323141fc2b2584754372eb\transformed\jetified-AndroidAwnCore-0.8.0\AndroidManifest.xml:22:13-89
+266            android:exported="true"
+266-->[me.carda:AndroidAwnCore:0.8.0] C:\Users\pc\.gradle\caches\transforms-3\14c380e9a8323141fc2b2584754372eb\transformed\jetified-AndroidAwnCore-0.8.0\AndroidManifest.xml:23:13-36
+267            android:label="My Notification Listener Service" >
+267-->[me.carda:AndroidAwnCore:0.8.0] C:\Users\pc\.gradle\caches\transforms-3\14c380e9a8323141fc2b2584754372eb\transformed\jetified-AndroidAwnCore-0.8.0\AndroidManifest.xml:24:13-61
+268            <intent-filter>
+268-->[me.carda:AndroidAwnCore:0.8.0] C:\Users\pc\.gradle\caches\transforms-3\14c380e9a8323141fc2b2584754372eb\transformed\jetified-AndroidAwnCore-0.8.0\AndroidManifest.xml:25:13-27:29
+269                <action android:name="android.service.notification.NotificationListenerService" />
+269-->[me.carda:AndroidAwnCore:0.8.0] C:\Users\pc\.gradle\caches\transforms-3\14c380e9a8323141fc2b2584754372eb\transformed\jetified-AndroidAwnCore-0.8.0\AndroidManifest.xml:26:17-99
+269-->[me.carda:AndroidAwnCore:0.8.0] C:\Users\pc\.gradle\caches\transforms-3\14c380e9a8323141fc2b2584754372eb\transformed\jetified-AndroidAwnCore-0.8.0\AndroidManifest.xml:26:25-96
+270            </intent-filter>
+271        </service>
+272        <service
+272-->[androidx.room:room-runtime:2.5.0] C:\Users\pc\.gradle\caches\transforms-3\923f551851d4d186a7ae64850e2abec2\transformed\room-runtime-2.5.0\AndroidManifest.xml:24:9-28:63
+273            android:name="androidx.room.MultiInstanceInvalidationService"
+273-->[androidx.room:room-runtime:2.5.0] C:\Users\pc\.gradle\caches\transforms-3\923f551851d4d186a7ae64850e2abec2\transformed\room-runtime-2.5.0\AndroidManifest.xml:25:13-74
+274            android:directBootAware="true"
+274-->[androidx.room:room-runtime:2.5.0] C:\Users\pc\.gradle\caches\transforms-3\923f551851d4d186a7ae64850e2abec2\transformed\room-runtime-2.5.0\AndroidManifest.xml:26:13-43
+275            android:exported="false" />
+275-->[androidx.room:room-runtime:2.5.0] C:\Users\pc\.gradle\caches\transforms-3\923f551851d4d186a7ae64850e2abec2\transformed\room-runtime-2.5.0\AndroidManifest.xml:27:13-37
+276
+277        <activity
+277-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:29:9-46:20
+278            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+278-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:30:13-80
+279            android:excludeFromRecents="true"
+279-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:31:13-46
+280            android:exported="true"
+280-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:32:13-36
+281            android:launchMode="singleTask"
+281-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:33:13-44
+282            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+282-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:34:13-72
+283            <intent-filter>
+283-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:35:13-45:29
+284                <action android:name="android.intent.action.VIEW" />
+284-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:36:17-69
+284-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:36:25-66
+285
+286                <category android:name="android.intent.category.DEFAULT" />
+286-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:17-76
+286-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:27-73
+287                <category android:name="android.intent.category.BROWSABLE" />
+287-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:39:17-78
+287-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:39:27-75
+288
+289                <data
+289-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:41:17-44:51
+290                    android:host="firebase.auth"
+290-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:42:21-49
+291                    android:path="/"
+291-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:43:21-37
+292                    android:scheme="genericidp" />
+292-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:44:21-48
+293            </intent-filter>
+294        </activity>
+295        <activity
+295-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:47:9-64:20
+296            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+296-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:48:13-79
+297            android:excludeFromRecents="true"
+297-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:49:13-46
+298            android:exported="true"
+298-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:50:13-36
+299            android:launchMode="singleTask"
+299-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:51:13-44
+300            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+300-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:52:13-72
+301            <intent-filter>
+301-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:53:13-63:29
+302                <action android:name="android.intent.action.VIEW" />
+302-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:36:17-69
+302-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:36:25-66
+303
+304                <category android:name="android.intent.category.DEFAULT" />
+304-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:17-76
+304-->[:awesome_notifications] F:\app\netflix\build\awesome_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:27-73
+305                <category android:name="android.intent.category.BROWSABLE" />
+305-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:39:17-78
+305-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:39:27-75
+306
+307                <data
+307-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:41:17-44:51
+308                    android:host="firebase.auth"
+308-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:42:21-49
+309                    android:path="/"
+309-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:43:21-37
+310                    android:scheme="recaptcha" />
+310-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\pc\.gradle\caches\transforms-3\888a9ebdf7114f9dac3bc79349331705\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:44:21-48
+311            </intent-filter>
+312        </activity>
+313        <activity
+313-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\pc\.gradle\caches\transforms-3\f33dc529890ea4a40c2a0a1f770d86b4\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:23:9-27:75
+314            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+314-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\pc\.gradle\caches\transforms-3\f33dc529890ea4a40c2a0a1f770d86b4\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:24:13-93
+315            android:excludeFromRecents="true"
+315-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\pc\.gradle\caches\transforms-3\f33dc529890ea4a40c2a0a1f770d86b4\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:25:13-46
+316            android:exported="false"
+316-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\pc\.gradle\caches\transforms-3\f33dc529890ea4a40c2a0a1f770d86b4\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:26:13-37
+317            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+317-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\pc\.gradle\caches\transforms-3\f33dc529890ea4a40c2a0a1f770d86b4\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:27:13-72
+318        <!--
+319            Service handling Google Sign-In user revocation. For apps that do not integrate with
+320            Google Sign-In, this service will never be started.
+321        -->
+322        <service
+322-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\pc\.gradle\caches\transforms-3\f33dc529890ea4a40c2a0a1f770d86b4\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:33:9-37:51
+323            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+323-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\pc\.gradle\caches\transforms-3\f33dc529890ea4a40c2a0a1f770d86b4\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:34:13-89
+324            android:exported="true"
+324-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\pc\.gradle\caches\transforms-3\f33dc529890ea4a40c2a0a1f770d86b4\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:35:13-36
+325            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+325-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\pc\.gradle\caches\transforms-3\f33dc529890ea4a40c2a0a1f770d86b4\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:36:13-107
+326            android:visibleToInstantApps="true" /> <!-- Needs to be explicitly declared on P+ -->
+326-->[com.google.android.gms:play-services-auth:19.2.0] C:\Users\pc\.gradle\caches\transforms-3\f33dc529890ea4a40c2a0a1f770d86b4\transformed\jetified-play-services-auth-19.2.0\AndroidManifest.xml:37:13-48
+327        <uses-library
+327-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\pc\.gradle\caches\transforms-3\470ade6724a8e2b4955e7c21380a395b\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+328            android:name="org.apache.http.legacy"
+328-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\pc\.gradle\caches\transforms-3\470ade6724a8e2b4955e7c21380a395b\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+329            android:required="false" />
+329-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\pc\.gradle\caches\transforms-3\470ade6724a8e2b4955e7c21380a395b\transformed\jetified-play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+330
+331        <receiver
+331-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\pc\.gradle\caches\transforms-3\5b53461b3a0bb821d30a9482bb522b91\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:29:9-36:20
+332            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+332-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\pc\.gradle\caches\transforms-3\5b53461b3a0bb821d30a9482bb522b91\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:30:13-78
+333            android:exported="true"
+333-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\pc\.gradle\caches\transforms-3\5b53461b3a0bb821d30a9482bb522b91\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:31:13-36
+334            android:permission="com.google.android.c2dm.permission.SEND" >
+334-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\pc\.gradle\caches\transforms-3\5b53461b3a0bb821d30a9482bb522b91\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:32:13-73
+335            <intent-filter>
+335-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+336                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+336-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+336-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+337            </intent-filter>
+338        </receiver>
+339        <!--
+340             FirebaseMessagingService performs security checks at runtime,
+341             but set to not exported to explicitly avoid allowing another app to call it.
+342        -->
+343        <service
+343-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\pc\.gradle\caches\transforms-3\5b53461b3a0bb821d30a9482bb522b91\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:42:9-49:19
+344            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+344-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\pc\.gradle\caches\transforms-3\5b53461b3a0bb821d30a9482bb522b91\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:43:13-82
+345            android:directBootAware="true"
+345-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\pc\.gradle\caches\transforms-3\5b53461b3a0bb821d30a9482bb522b91\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:44:13-43
+346            android:exported="false" >
+346-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\pc\.gradle\caches\transforms-3\5b53461b3a0bb821d30a9482bb522b91\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:45:13-37
+347            <intent-filter android:priority="-500" >
+347-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+348                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+348-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+348-->[:firebase_messaging] F:\app\netflix\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+349            </intent-filter>
+350        </service>
+351
+352        <provider
+352-->[com.google.firebase:firebase-common:20.3.3] C:\Users\pc\.gradle\caches\transforms-3\3817c50311106436f5a82e10cc73a226\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:25:9-30:39
+353            android:name="com.google.firebase.provider.FirebaseInitProvider"
+353-->[com.google.firebase:firebase-common:20.3.3] C:\Users\pc\.gradle\caches\transforms-3\3817c50311106436f5a82e10cc73a226\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:26:13-77
+354            android:authorities="com.example.netflix.firebaseinitprovider"
+354-->[com.google.firebase:firebase-common:20.3.3] C:\Users\pc\.gradle\caches\transforms-3\3817c50311106436f5a82e10cc73a226\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:27:13-72
+355            android:directBootAware="true"
+355-->[com.google.firebase:firebase-common:20.3.3] C:\Users\pc\.gradle\caches\transforms-3\3817c50311106436f5a82e10cc73a226\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:28:13-43
+356            android:exported="false"
+356-->[com.google.firebase:firebase-common:20.3.3] C:\Users\pc\.gradle\caches\transforms-3\3817c50311106436f5a82e10cc73a226\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:29:13-37
+357            android:initOrder="100" />
+357-->[com.google.firebase:firebase-common:20.3.3] C:\Users\pc\.gradle\caches\transforms-3\3817c50311106436f5a82e10cc73a226\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:30:13-36
+358
+359        <receiver
+359-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\pc\.gradle\caches\transforms-3\703cda2df44a7b6bb6742c89c6c75047\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:29:9-33:20
+360            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+360-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\pc\.gradle\caches\transforms-3\703cda2df44a7b6bb6742c89c6c75047\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:30:13-85
+361            android:enabled="true"
+361-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\pc\.gradle\caches\transforms-3\703cda2df44a7b6bb6742c89c6c75047\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:31:13-35
+362            android:exported="false" >
+362-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\pc\.gradle\caches\transforms-3\703cda2df44a7b6bb6742c89c6c75047\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:32:13-37
+363        </receiver>
+364
+365        <service
+365-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\pc\.gradle\caches\transforms-3\703cda2df44a7b6bb6742c89c6c75047\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:35:9-38:40
+366            android:name="com.google.android.gms.measurement.AppMeasurementService"
+366-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\pc\.gradle\caches\transforms-3\703cda2df44a7b6bb6742c89c6c75047\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:36:13-84
+367            android:enabled="true"
+367-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\pc\.gradle\caches\transforms-3\703cda2df44a7b6bb6742c89c6c75047\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:37:13-35
+368            android:exported="false" />
+368-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\pc\.gradle\caches\transforms-3\703cda2df44a7b6bb6742c89c6c75047\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:38:13-37
+369        <service
+369-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\pc\.gradle\caches\transforms-3\703cda2df44a7b6bb6742c89c6c75047\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:39:9-43:72
+370            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+370-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\pc\.gradle\caches\transforms-3\703cda2df44a7b6bb6742c89c6c75047\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:40:13-87
+371            android:enabled="true"
+371-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\pc\.gradle\caches\transforms-3\703cda2df44a7b6bb6742c89c6c75047\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:41:13-35
+372            android:exported="false"
+372-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\pc\.gradle\caches\transforms-3\703cda2df44a7b6bb6742c89c6c75047\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:42:13-37
+373            android:permission="android.permission.BIND_JOB_SERVICE" />
+373-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\pc\.gradle\caches\transforms-3\703cda2df44a7b6bb6742c89c6c75047\transformed\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:43:13-69
+374
+375        <activity
+375-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\pc\.gradle\caches\transforms-3\e0a8793a7a85d6e071b7a743c9adf075\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+376            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+376-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\pc\.gradle\caches\transforms-3\e0a8793a7a85d6e071b7a743c9adf075\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+377            android:exported="false"
+377-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\pc\.gradle\caches\transforms-3\e0a8793a7a85d6e071b7a743c9adf075\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+378            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+378-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\pc\.gradle\caches\transforms-3\e0a8793a7a85d6e071b7a743c9adf075\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+379
+380        <meta-data
+380-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\pc\.gradle\caches\transforms-3\55b4e390742817dc4b9653e42d791034\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+381            android:name="com.google.android.gms.version"
+381-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\pc\.gradle\caches\transforms-3\55b4e390742817dc4b9653e42d791034\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+382            android:value="@integer/google_play_services_version" />
+382-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\pc\.gradle\caches\transforms-3\55b4e390742817dc4b9653e42d791034\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+383
+384        <uses-library
+384-->[androidx.window:window:1.0.0-beta04] C:\Users\pc\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+385            android:name="androidx.window.extensions"
+385-->[androidx.window:window:1.0.0-beta04] C:\Users\pc\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+386            android:required="false" />
+386-->[androidx.window:window:1.0.0-beta04] C:\Users\pc\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+387        <uses-library
+387-->[androidx.window:window:1.0.0-beta04] C:\Users\pc\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+388            android:name="androidx.window.sidecar"
+388-->[androidx.window:window:1.0.0-beta04] C:\Users\pc\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+389            android:required="false" />
+389-->[androidx.window:window:1.0.0-beta04] C:\Users\pc\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+390
+391        <provider
+391-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pc\.gradle\caches\transforms-3\a069e44d9c98fbecf8e5475010c3a44b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+392            android:name="androidx.startup.InitializationProvider"
+392-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pc\.gradle\caches\transforms-3\a069e44d9c98fbecf8e5475010c3a44b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+393            android:authorities="com.example.netflix.androidx-startup"
+393-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pc\.gradle\caches\transforms-3\a069e44d9c98fbecf8e5475010c3a44b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+394            android:exported="false" >
+394-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pc\.gradle\caches\transforms-3\a069e44d9c98fbecf8e5475010c3a44b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+395            <meta-data
+395-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pc\.gradle\caches\transforms-3\a069e44d9c98fbecf8e5475010c3a44b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+396                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+396-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pc\.gradle\caches\transforms-3\a069e44d9c98fbecf8e5475010c3a44b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+397                android:value="androidx.startup" />
+397-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pc\.gradle\caches\transforms-3\a069e44d9c98fbecf8e5475010c3a44b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+398            <meta-data
+398-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\pc\.gradle\caches\transforms-3\21dd80ff2c792d22d155eb6f4656712d\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+399                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+399-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\pc\.gradle\caches\transforms-3\21dd80ff2c792d22d155eb6f4656712d\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+400                android:value="androidx.startup" />
+400-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\pc\.gradle\caches\transforms-3\21dd80ff2c792d22d155eb6f4656712d\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+401            <meta-data
+401-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\pc\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+402                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+402-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\pc\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+403                android:value="androidx.startup" />
+403-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\pc\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+404        </provider>
+405
+406        <service
+406-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\pc\.gradle\caches\transforms-3\c25200b336a583dea6bfe89926a97535\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+407            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+407-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\pc\.gradle\caches\transforms-3\c25200b336a583dea6bfe89926a97535\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+408            android:exported="false" >
+408-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\pc\.gradle\caches\transforms-3\c25200b336a583dea6bfe89926a97535\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+409            <meta-data
+409-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\pc\.gradle\caches\transforms-3\c25200b336a583dea6bfe89926a97535\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+410                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+410-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\pc\.gradle\caches\transforms-3\c25200b336a583dea6bfe89926a97535\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+411                android:value="cct" />
+411-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\pc\.gradle\caches\transforms-3\c25200b336a583dea6bfe89926a97535\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+412        </service>
+413        <service
+413-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\pc\.gradle\caches\transforms-3\b532c95a59e9f33503a80543acc85a14\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+414            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+414-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\pc\.gradle\caches\transforms-3\b532c95a59e9f33503a80543acc85a14\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+415            android:exported="false"
+415-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\pc\.gradle\caches\transforms-3\b532c95a59e9f33503a80543acc85a14\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+416            android:permission="android.permission.BIND_JOB_SERVICE" >
+416-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\pc\.gradle\caches\transforms-3\b532c95a59e9f33503a80543acc85a14\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+417        </service>
+418
+419        <receiver
+419-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\pc\.gradle\caches\transforms-3\b532c95a59e9f33503a80543acc85a14\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+420            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+420-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\pc\.gradle\caches\transforms-3\b532c95a59e9f33503a80543acc85a14\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+421            android:exported="false" />
+421-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\pc\.gradle\caches\transforms-3\b532c95a59e9f33503a80543acc85a14\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+422        <receiver
+422-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\pc\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+423            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+423-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\pc\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+424            android:directBootAware="false"
+424-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\pc\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+425            android:enabled="true"
+425-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\pc\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+426            android:exported="true"
+426-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\pc\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+427            android:permission="android.permission.DUMP" >
+427-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\pc\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+428            <intent-filter>
+428-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\pc\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+429                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+429-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\pc\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+429-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\pc\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+430            </intent-filter>
+431            <intent-filter>
+431-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\pc\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+432                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+432-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\pc\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+432-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\pc\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+433            </intent-filter>
+434            <intent-filter>
+434-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\pc\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+435                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+435-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\pc\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+435-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\pc\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+436            </intent-filter>
+437            <intent-filter>
+437-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\pc\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+438                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+438-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\pc\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+438-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\pc\.gradle\caches\transforms-3\b92cbf7d134b1c7f58467c023b6e5f48\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+439            </intent-filter>
+440        </receiver>
+441    </application>
+442
+443</manifest>
